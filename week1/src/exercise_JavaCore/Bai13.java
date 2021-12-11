@@ -93,14 +93,11 @@ public class Bai13 {
     	}
     	//add element
     	public static void insertElement(ArrayList<Integer> a, int index, int x) {
-    		if(0 < index && index < a.size()) {
-    			a.add(index, x);
-    			System.out.print("Array after insert " + x + " to index " + index +" : "  );
-    			for(int i = 0; i < a.size(); i++) {
-    				System.out.print(a.get(i) + " ");
-    			}
-    		}else { 
-    			System.out.println("Error");
+    		if(index > a.size()) index = a.size();
+    		a.add(index, x);
+    		System.out.println("Mảng sau khi thêm");
+    		for(int pt:a) {
+    			System.out.print(pt + " ");
     		}
     		System.out.println();
     	}
@@ -125,11 +122,13 @@ public class Bai13 {
 		int n = sc.nextInt();
 		ArrayList<Integer> arr = new ArrayList<Integer>();
 		ArrayList<Integer> arr1 = new ArrayList<Integer>();
+		ArrayList<Integer> arr2 = new ArrayList<Integer>();
 		System.out.println("Enter elements: ");
 		for(int i = 0; i < n; i++) {
 			int x = sc.nextInt();
 			arr.add(x);
 			arr1.add(x);
+			arr2.add(x);
 		}
 		System.out.println("Enter index: ");
 		int index = sc.nextInt();
@@ -142,7 +141,7 @@ public class Bai13 {
 		negativeMaxMin(arr);
 		positiveMaxMin(arr);
 		findEvenOdd(arr);
-		insertElement(arr, index, num);
+		insertElement(arr2, index, num);
 		removeElement(arr1, pos);
 	}
 }
