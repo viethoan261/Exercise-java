@@ -2,7 +2,7 @@ package week2_exercise;
 
 import java.util.Scanner;
 
-public class QuanLySinhVien {
+public class SinhVien {
 	private int maSV;
 	private String tenSV;
 	private float diemToan;
@@ -62,10 +62,10 @@ public class QuanLySinhVien {
 	public void setXepLoai(String xepLoai) {
 		this.xepLoai = xepLoai;
 	}
-	public QuanLySinhVien() {
+	public SinhVien() {
 		
 	}
-	public QuanLySinhVien(int maSV, String tenSV, float diemToan, float diemLy, float diemHoa) {
+	public SinhVien(int maSV, String tenSV, float diemToan, float diemLy, float diemHoa) {
 		this.maSV = maSV;
 		this.tenSV = tenSV;
 		this.diemToan = diemToan;
@@ -102,13 +102,14 @@ public class QuanLySinhVien {
 		System.out.print("Nhập vào điểm hóa: ");
 		this.diemHoa = Integer.parseInt(sc.nextLine());
 	}
-	public void xuatSV() {
-		System.out.println("Mã sinh viên: " + this.maSV);
-		System.out.println("Tên sinh viên: " + this.tenSV);
-		System.out.println("Điểm toán: " + this.diemToan);
-		System.out.println("Điểm lý: " + this.diemLy);
-		System.out.println("Điểm hóa: " + this.diemHoa);
-		System.out.println("Điểm trung bình: " + this.diemTB);
-		System.out.println("Xếp loại: " + this.xepLoai);
+	public void xuatSV(int stt) {
+		System.out.print(stt + "   |");
+		System.out.print(this.maSV + "            |");
+		System.out.print(this.tenSV + "          |");
+		System.out.print(this.diemToan + "       |");
+		System.out.print(this.diemLy + "     |");
+		System.out.print(this.diemHoa + "      |");
+		System.out.print(this.diemTB + "             |");
+		System.out.println(this.xepLoai + "  |");
 	}
 }
