@@ -1,0 +1,188 @@
+.logo {
+    width: 250px;
+}
+.clear {
+    clear:both;
+}
+
+#navbar {
+    background-color: #0D1524;
+}
+#navbar ul {
+    list-style: none;
+    padding-top: 15px;
+    padding-bottom: 15px   ;
+    padding-left: 0px;
+    margin: 0;
+}
+#navbar ul li {
+    display: inline;
+    margin: 0px 20px;
+}
+#navbar ul li a:hover {
+    color: #ff0000;
+}
+#navbar ul li a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+#carousel {
+    height: 450px;
+    margin-top: 10px;
+    background-image: url('../img-layout-2/slider_1.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-clip: content-box;
+}
+
+
+.intro-text {
+    font-size: 20px;
+    color: grey;
+    font-weight: bold;
+    line-height: 30px;
+    letter-spacing: 2px;
+    text-indent: 40px;
+    text-align: justify;
+}
+.intro-product-left, .intro-product-right {
+    float: left;
+    width: 50%;
+}
+.intro-product-item {
+    float: left;
+} 
+.intro-product-item-1 {
+    width: 50%;
+}
+.intro-product-item-2 {
+    width: 100%;
+}
+.intro-product-item-img{
+    width: 100%;
+    display : block;
+}
+#nha_tam {
+    padding-left: 22px;
+}
+#sofa {
+   padding-left: 9px;
+}
+#noi_that{
+    padding-left: 20px; padding-top: 10px;
+} 
+#phong_khach {
+    padding-left: 20px;
+}
+#van_phong {
+    padding-top: 11px; padding-left: 20px;
+}
+
+
+#product > h1 {
+    text-align: center;
+  
+}
+#product .product-item {
+    width: 25%;
+    padding: 0 10px;
+    float: left;
+    box-sizing: border-box;
+}
+.item-img {
+    max-width: 100%;
+}
+.item-title {
+    font-weight: bold;
+    font-size: 25px;
+}
+.item-content{
+    font-size: 17px;
+    color: #000000;
+}
+.item-btn {
+    background-color: #ff0000;
+    border: 1px solid #ff0000;
+    color: white;
+}
+#listSP {
+    margin-top: -15px;
+}
+
+/* Begin banner */
+#banner {
+    height: 400px;
+    background-image: url(../img-layout-2/nature.jpg);
+    background-size: cover;
+    position: relative;
+
+    margin-top: 15px;
+}
+/*  -webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+  border-radius: 50%;
+ */
+#banner .saleoff {
+    height: 250px;
+    width: 250px;
+    background-color: rgba(165, 24, 24, 0.6);
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+#banner .saleoff p:nth-child(2) {
+    font-size: 85px;
+    margin: 10px 0;
+
+}
+
+#banner .saleoff h2, #banner .saleoff p {
+    color: white;
+    text-align: center;
+    margin-top: 25px;
+    font-size: 30px;
+}
+#banner.saleoff h2 {
+    margin-top: 70px;
+}
+
+
+.service {
+    width: 60%;
+    margin: 20px auto;
+}
+.service_item {
+    width: 33.333333%;
+    float:left;
+    text-align:center;
+}
+.service_item i{
+    font-size: 40px;
+    color: black;
+
+    margin-top: 15px;
+}
+
+h2 {
+    margin-top: 0px;
+    height: 15px;
+}
+
+#footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding-top: 15px;
+    margin-top: 40px;
+}
+
+#footer #tieu_de_footer {
+   font-size: 30px;
+}
